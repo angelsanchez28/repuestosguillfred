@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Repuestos Guillfred.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Inicio/inicio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+
+
+    <header class="titulo">
+        <div>
+            <img src="images/logo.png" class="imgTitulo">
+            <nav class="navbar">
+                <div class="navbar-contenedor">
+                    <ul class="menu-nav">
+                        <!-- Menús generales -->
+                        <li class="list-menu"><a href="Inicio/Index.html" class="link-menu">Inicio</a></li>
+                        <li class="list-menu"><a href="Quienes somos/quienes-somos.html" class="link-menu">Quienes
+                                Somos</a></li>
+                        <li class="list-menu"><a href="Catalogo/catalogo.html" class="link-menu">Catalogo</a></li>
+                        <li class="list-menu"><a href="Servicio/servicio.html" class="link-menu">Servicios</a></li>
+                        <li class="list-menu"><a href="Comunicate/comunicate.html" class="link-menu">Comunicate con
+                                Nosotros</a></li>
+
+                        <!-- Menús visibles para usuarios NO logueados -->
+                        <li class="list-menu navAuth" id="navAuth-cuenta">
+                            <a href="Accede a tu cuenta/tu-cuenta.html" class="link-menu">Accede a tu cuenta</a>
+                        </li>
+                        <li class="list-menu navAuth" id="navAuth-registro">
+                            <a href="Registrate/registrate.html" class="link-menu">Registrate</a>
+                        </li>
+
+                        <!-- Menú visible solo para usuarios logueados -->
+                        <li class="perfil-menu" id="navUsuario" style="display: none;">
+                            <a href="#" class="link-menu perfil-toggle">
+                                <i class="bi bi-person-square icono-usuario" id="iconoDefault"></i>
+                                <img id="avatarUsuario" class="avatar-usuario" style="display: none;"
+                                    alt="Avatar usuario">
+                                <span id="nombreUsuario"></span>
+                            </a>
+
+
+                            <ul class="dropdown-menu" style="display: none;">
+                                <li>
+                                    <label for="imagenInput" class="link-menu cambiar-foto" style="cursor: pointer;">
+                                        📷 Cambiar foto de perfil
+                                    </label>
+                                    <input type="file" id="imagenInput" accept="image/*" style="display: none;">
+                                </li>
+                                <li><a href="#" id="cerrarSesion" class="link-menu">🚪🚶 Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+
+    <section class="imagenSaludo">
+        <img src="images/Card saludo/imagensaludo.jpg" alt="">
+    </section>
+
+    <main class="main">
+        <section class="cardSaludo">
+            <div class="saludo">
+                <h1 class="bienvenidos">BIENVENIDOS "AUTO REPUESTOS GUILLFRED"</h1>
+            </div>
+        </section>
+
+
+        <section id="cardProductos">
+            <h2>Nuestros Productos</h2>
+            <div class="container">
+
+
+                <div class="cardPro">
+                    <img src="images/Productos/tcarro.jpg" alt="">
+                    <p>Productos</p>
+                </div>
+
+
+                <div class="cardPro">
+                    <img src="images/Productos/ticarro.jpg" alt="">
+                    <p>Productos</p>
+                </div>
+
+
+                <div class="cardPro">
+                    <img src="images/Productos/tcarro.jpg" alt="">
+                    <p>Productos</p>
+                </div>
+
+
+                <div class="cardPro">
+                    <img src="images/Productos/ticarro.jpg" alt="">
+                    <p>Productos</p>
+                </div>
+            </div>
+
+
+            <div class="h3Pro">
+                <h3>¿Quieres conocer todos nuestros productos?</h3>
+                <button class="produ-boton">
+                    <a href="Catalogo/catalogo.html">Nuestro Catalogo</a>
+                </button>
+            </div>
+
+        </section>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active data-bs-interval=" 1000" d-item">
+                    <img src="images/Marcas/Chery.jpg" class="d-block w-100 d-img" alt="slider 1">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/CHEVROLET.jpg" class="d-block w-100 d-img" alt="slider 2">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/ford.jpg" class="d-block w-100 d-img" alt="slider 3">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/Hyundai.jpg" class="d-block w-100 d-img" alt="slider 4">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/jeep.jpg" class="d-block w-100 d-img" alt="slider 5">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/logo de Fiat.jpg" class="d-block w-100 d-img" alt="slider 6">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/mitsubishi.jpg" class="d-block w-100 d-img" alt="slider 7">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/renault.jpg" class="d-block w-100 d-img" alt="slider 8">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/toyota.jpg" class="d-block w-100 d-img" alt="slider 9">
+                </div>
+                <div class="carousel-item d-item">
+                    <img src="images/Marcas/volkswagen.jpg" class="d-block w-100 d-img" alt="slider 10">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        </section>
+
+        <section id="cardClientes">
+            <h3>Nuestros Clientes</h3>
+            <div class="container">
+                <div class="cardCli">
+                    <img src="images/Clientes/clientes1.jpg" alt="">
+                </div>
+                <div class="cardCli">
+                    <img src="images/Clientes/clientes2.jpg" alt="">
+                </div>
+                <div class="cardCli">
+                    <img src="images/Clientes/clientes3.jpg" alt="">
+                </div>
+                <div class="cardCli">
+                    <img src="images/Clientes/clientes4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <section class="footer_main">
+                <a href="Index.html" class="footer-logo-link">
+                    <img src="images/logo.png" class="footer-logo">
+                </a>
+
+                <nav class="footer_links">
+                    <a href="/Quienes somos/quienes-somos.html" class="footer-link">Quienes Somos</a>
+                    <a href="/Servicio/servicio.html" class="footer-link">Servicios</a>
+                    <a href="/Comunicate/comunicate.html" class="footer-link">Catalogo</a>
+                    <a href="/Registrate/registrate.html" class="footer-link">Registrate</a>
+                </nav>
+
+                <article class="footer-contact">
+                    <h4 class="footer_copy">Contactanos</h4>
+                    <p class="footer_info">
+                        Email: Example@example.com
+                    </p>
+                    <p class="footer_info">
+                        Teléfono: 0424-0000000
+                    </p>
+                    <p class="footer_info">
+                        Dirección: Esta es nuestra dirección 12-34 local 1.
+                    </p>
+                </article>
+
+                <form class="footer_newsletter">
+                    <input type="email" placeholder="Correo Electronico" class="footer_email">
+
+                    <input type="submit" value="Contactanos" class="footer_submit">
+                </form>
+
+                <nav class="footer_social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </nav>
+            </section>
+
+            <section class="footer_copyright">
+                <p class="footer_copyright-text">
+                    &copy; Nuestro Proyecto Todos los Derechos Reservados.
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navUsuario = document.getElementById("navUsuario");
+    const nombreUsuario = document.getElementById("nombreUsuario");
+    const cerrarSesionBtn = document.getElementById("cerrarSesion");
+    const imagenInput = document.getElementById("imagenInput");
+    const toggleMenu = document.querySelector(".perfil-toggle");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+    const avatarUsuario = document.getElementById("avatarUsuario");
+    const iconoDefault = document.getElementById("iconoDefault");
+
+    let usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
+
+    if (usuarioActual) {
+      navUsuario.style.display = "inline";
+      const navAuthCuenta = document.getElementById("navAuth-cuenta");
+      const navAuthRegistro = document.getElementById("navAuth-registro");
+      if (navAuthCuenta) navAuthCuenta.style.display = "none";
+      if (navAuthRegistro) navAuthRegistro.style.display = "none";
+
+      nombreUsuario.textContent = usuarioActual.nombre.split(" ")[0];
+
+      if (usuarioActual.imagenPerfil) {
+        avatarUsuario.src = usuarioActual.imagenPerfil;
+        avatarUsuario.style.display = "inline-block";
+        if (iconoDefault) iconoDefault.style.display = "none";
+      }
+
+      if (imagenInput) {
+        imagenInput.addEventListener("change", (e) => {
+          const archivo = e.target.files[0];
+          if (!archivo) return;
+
+          const lector = new FileReader();
+          lector.onload = () => {
+            const imagenBase64 = lector.result;
+
+            // Actualizar usuarioActual
+            usuarioActual.imagenPerfil = imagenBase64;
+            localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
+
+            // Actualizar en usuariosRegistrados
+            const usuarios = JSON.parse(localStorage.getItem("usuariosRegistrados")) || [];
+            const indice = usuarios.findIndex(user => user.correo === usuarioActual.correo);
+            if (indice !== -1) {
+              usuarios[indice].imagenPerfil = imagenBase64;
+              localStorage.setItem("usuariosRegistrados", JSON.stringify(usuarios));
+            }
+
+            // Mostrar imagen en interfaz
+            avatarUsuario.src = imagenBase64;
+            avatarUsuario.style.display = "inline-block";
+            if (iconoDefault) iconoDefault.style.display = "none";
+
+            alert("¡Imagen de perfil actualizada!");
+          };
+
+          lector.readAsDataURL(archivo);
+        });
+      }
+
+      if (toggleMenu && dropdownMenu) {
+        toggleMenu.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (dropdownMenu.classList.contains("visible")) {
+            dropdownMenu.classList.remove("visible");
+            setTimeout(() => {
+              dropdownMenu.style.display = "none";
+            }, 250);
+          } else {
+            dropdownMenu.style.display = "block";
+            setTimeout(() => {
+              dropdownMenu.classList.add("visible");
+            }, 10);
+          }
+        });
+      }
+
+      if (cerrarSesionBtn) {
+        cerrarSesionBtn.addEventListener("click", () => {
+          localStorage.removeItem("usuarioActual");
+          location.reload();
+        });
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+</html>
